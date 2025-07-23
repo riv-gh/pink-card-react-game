@@ -1,0 +1,53 @@
+.card {
+  /* margin: 1vh 1vw; */
+  margin: max(1vw, 1vh);
+  /* background: pink; */
+  /* background: linear-gradient(180deg, #FFC0CB 0%, #FE7D9C 50%, #D4C0FF 50%, #9B82E2 100%); */
+  background-color: #9B82E2;
+  background: linear-gradient(180deg, #FFC0CB 0%, #FE7D9C 20%, #FE7D9C 50%, #D4C0FF 50%, #D4C0FF 80%, #9B82E2 100%);
+  background-size: 100% 500%;
+  background-position-y: 0%;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* transition: transform 0.1s linear; */
+  transition:  0.1s linear;
+  user-select: none;
+  border-radius: min(1vh, 2vw);
+  opacity: 1;
+}
+.card>.image {
+  /* display: none; */
+  opacity: 0;
+  /* font-size: 8vh; */
+  font-size: min(6vh, 8vw);
+  line-height: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.card.open {
+  transform: rotateY(0deg);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  background-position-y: 100%;
+  /* background: linear-gradient(180deg, #D4C0FF 0%, #9B82E2 100%); */
+}
+/* .card.open:not(.noDealt) {
+  background: linear-gradient(180deg, #D4C0FF 0%, #9B82E2 100%);
+} */
+.card.open>.image {
+  /* display: block; */
+  opacity: 1;
+}
+
+.card.open.noDealt {
+  /* box-shadow: 4px 9px 13px #7157AD; */
+  box-shadow: 1vh 1vh 1.5vh #7157AD;
+}
+
+.card.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s;
+}

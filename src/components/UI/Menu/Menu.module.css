@@ -1,0 +1,16 @@
+/* 3vh = 14px */
+.menu>div {
+  margin: 2.1vh 0; /* 10px 0; */
+}
+.inlineMenu>div {
+  display: inline-block;
+  margin: 1vh 1vh; /* 10px 5px; */
+}
+.fullScreen {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+  margin-top: 5vh;
+}

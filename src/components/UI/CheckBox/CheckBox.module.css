@@ -1,0 +1,20 @@
+.checkBox {
+  display: inline-flex
+}
+.checkBox span {
+  /* display: inline-block; */
+  background-color: pink;
+  color: white;
+  text-align: center;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 1vh  
+}
+
+.checkBox:active span {
+  background: rgb(255, 120, 142);
+}
+
+/* .checked {
+  background-color:green!important;
+} */

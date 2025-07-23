@@ -1,0 +1,4 @@
+.resultBlock ,
+.resultBlock>* {
+  padding-bottom: 1vh;
+}

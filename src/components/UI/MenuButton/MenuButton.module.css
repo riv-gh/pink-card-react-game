@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+  /* padding: 1.1vh 3.2vh; */
+  color: white;
+  font-size: 3vh; /*14px*/
+  /* background: pink; */
+  background: linear-gradient(180deg, #FFC0CB 0%, #FE7D9C 100%);
+  cursor: pointer;
+  text-decoration: none;
+  border-width: 0;
+  /* border-radius: 2vh;  */
+  border-radius: min(1vh, 2vw);
+  width: 6vh;
+  height: 6vh;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around; */
+}
+.btn:active {
+  background: rgb(255, 120, 142);
+}
+.btn>span {
+  background-color: white;
+  position: absolute;
+  height: 0.25vh;
+  width: 3vh;
+  left: 1.5vh;
+}
+
+.btn>span:nth-child(1) {
+  top: 2vh;
+}
+.btn>span:nth-child(2) {
+  top: 3vh;
+}
+.btn>span:nth-child(3) {
+  top: 4vh;
+}
+
+.btn.back>span:nth-child(1) {
+  transform: rotate(45deg);
+  width: 2vh;
+  top: 2vh
+}
+.btn.back>span:nth-child(2) {
+  width: 2vh
+}
+.btn.back>span:nth-child(3) {
+  transform: rotate(-45deg);
+  width: 2vh;
+}
+
+.btn.close>span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.btn.close>span:nth-child(2) {
+  width: 0vh;
+}
+.btn.close>span:nth-child(3) {
+  transform: rotate(-45deg);
+}
