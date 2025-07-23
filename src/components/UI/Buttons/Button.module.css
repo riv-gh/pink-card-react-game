@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  /* padding: 1.1vh 3.2vh; */
+  padding: 1vh 2vh;
+  color: white;
+  font-size: 3vh; /*14px*/
+  /* background: pink; */
+  background: linear-gradient(180deg, #FFC0CB 0%, #FE7D9C 100%);
+  cursor: pointer;
+  text-decoration: none;
+  border-width: 0;
+  /* border-radius: 2vh;  */
+  border-radius: min(1vh, 2vw);
+}
+.btn:disabled {
+  color: gray;
+  cursor: no-drop;
+}
+/* .btn:not(:disabled):hover {
+  
+} */
+.btn:active {
+  background: rgb(255, 120, 142);
+}
+.btn:first {
+  margin-top: 30px;
+}
+.btn+.btn,
+.btn+select,
+.btn+input
+ {
+  margin-left: 10px
+}
+
+.shareBtn {
+  display: inline-flex;
+  align-items: center;
+} 
+.shareBtn>*+* {
+  margin-left: 1vh;
+}
