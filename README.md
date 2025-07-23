@@ -2,7 +2,7 @@
 
 Pink Card is my old android game project based on React
 
-[play on gh-pages](https://riv-gh.github.io/pink-cart-react-game/)
+[play on gh-pages](https://riv-gh.github.io/pink-card-react-game/)
 
 <img width="1276" height="914" alt="image" src="https://github.com/user-attachments/assets/1c48209a-2577-4bea-a0c2-3b751e37a59e" />
 
